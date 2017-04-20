@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Расписание лекций "Мобилизации"</title>
+</head>
+<body class="tm-page">
+  <header class="tm-page__header">
+    <h1 class="tm-page__heading heading heading_large">Расписание лекций проекта "Мобилизация"</h1>
+  </header>
+  <main class="tm-page__content">
+    <div class="tm-page__in">
+      <!-- begin timetable -->
+      <div class="timetable">
+
+        <!-- begin filters  -->
+        <form action="#" id="filters-form" method = "post" class="timetable__filters filters">
+          <fieldset id="schools-filter" class="filters__group">
+            <div class="filters__item">
+              <input type="checkbox" id="schools_all" value="schools_all" data-value="Все">
+              <label for="schools_all">Все школы</label>
+            </div>
+            <div class="filters__item">
+              <input type="checkbox" id="schools_shri" value="shri" data-value="Школа разработки интерфейсов">
+              <label for="schools_shri">Школа разработки интерфейсов</label>
+            </div>
+            <div class="filters__item">
+              <input type="checkbox" id="schools_mobdev" value="mobdev" data-value="Школа мобильной разработки">
+              <label for="schools_mobdev">Школа мобильной разработки</label>
+            </div>
+            <div class="filters__item">
+              <input type="checkbox" id="schools_design" value="design" data-value="Школа мобильного дизайна">
+              <label for="schools_design">Школа мобильного дизайна</label>
+            </div>
+          </fieldset>
+          <fieldset class="filters__lectors">
+            <div class="lectors-select">
+              <label class="lectors-select__label">Школа мобильной разработки:</label>
+              <select class="lectors-select__select">
+                <option>Все лекторы</option>
+                <!-- Школа разработки интерфейсов -->
+                <option>Дмитрий Душкин</option>
+                <option>Максим Васильев</option>
+                <option>Сергей Бережной</option>
+                <option>Андрей Морозов</option>
+                <option>Иван Карев</option>
+                <option>Прокопюк Андрей</option>
+                <!-- Школа мобильной разработки: -->
+                <option>Эдуард Мацуков</option>
+                <option>Дмитрий Складнов</option>
+                <option>Алексей Щербинин</option>
+                <option>Роман Григорьев</option>
+                <option>Алексей Макаров</option>
+                <option>Владимир Тагаков</option>
+                <option>Максим Хромцов</option>
+
+                <option>Денис Загаевский</option>
+
+                <option>Дмитрий Попов</option>
+
+                <option>Илья Сергеев</option>
+                <!-- Школа мобильного дизайна: -->
+                <option>Антон Тен</option>
+                <option>Васюнин Николай</option>
+                <option>Сергей Калабин</option>
+                <option>Сергей Томилов</option>
+                <option>Дарья Старицына</option>
+                <option>Rijshouwer Krijn</option>
+                <option>Treub Jonas</option>
+                <option>Андрей Гевак</option>
+                <option>Кондратьев Александр</option>
+                <option>Юрий Подорожный</option>
+                <option>Дмитрий Моруз</option>
+                <option>Ждан Филиппов</option>
+                <!--  -->
+              </select>
+            </div>
+          </fieldset>
+          <fieldset class="filters__dates">
+            <div class="calendar">
+              Календарь
+            </div>
+            <div class="calendar">
+              Календарь
+            </div>
+          </fieldset>
+        </form>
+        <!-- end filters -->
+
+        <!-- begin timetable -->
+        <section class="timetable__lectures lectures">
+          <article class="lecture">
+            <time class="event__date" datetime="2016-10-20 14:00">
+              <span class="event__day">20 октября</span>
+              <span class="event__time">
+                14:00
+              </span>
+            </time>
+            <h2 class="event__theme">Адаптивная вёрстка</h2>
+            <ul class="event__lectors">
+              <li class="event__lector">
+                <span class="event__lectorname">Дмитрий Душкин</span>
+                <span class="event__lectorcompany">Яндекс</span>
+                <div class="event__lectorbio">
+                  Кандидат технических наук, научный сотрудник ИПУ РАН с 2008 по 2013. Пришёл в Яндекс.Картинки в 2014 году, отвечал за мобильную версию и рост производительности сервиса. В 2016 перешёл в Yandex Data Factory, где разрабатывает интерфейсы и дизайн веб-приложений для B2B.
+                </div>
+              </li>
+            </ul>
+            <div class="event__place">
+              "Синий кит"
+            </div>
+          </article>
+        </section>
+        <!-- end timetable -->
+
+      </div>
+      <!-- end timetable -->
+    </div>
+  </main>
+  <footer class="tm-page__footer">
+
+  </footer>
+</body>
+</html>
