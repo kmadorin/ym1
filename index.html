@@ -2,7 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Расписание лекций "Мобилизации"</title>
+  <!-- Normalize.css -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <!-- Шрифты -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+  <!-- Общие стили -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body class="tm-page">
   <header class="tm-page__header">
@@ -89,27 +96,197 @@
 
         <!-- begin timetable -->
         <section class="timetable__lectures lectures">
-          <article class="lecture">
-            <time class="event__date" datetime="2016-10-20 14:00">
-              <span class="event__day">20 октября</span>
-              <span class="event__time">
-                14:00
-              </span>
-            </time>
-            <h2 class="event__theme">Адаптивная вёрстка</h2>
-            <ul class="event__lectors">
-              <li class="event__lector">
-                <span class="event__lectorname">Дмитрий Душкин</span>
-                <span class="event__lectorcompany">Яндекс</span>
-                <div class="event__lectorbio">
-                  Кандидат технических наук, научный сотрудник ИПУ РАН с 2008 по 2013. Пришёл в Яндекс.Картинки в 2014 году, отвечал за мобильную версию и рост производительности сервиса. В 2016 перешёл в Yandex Data Factory, где разрабатывает интерфейсы и дизайн веб-приложений для B2B.
-                </div>
-              </li>
-            </ul>
-            <div class="event__place">
-              "Синий кит"
-            </div>
-          </article>
+            <article class="lecture lecture_left">
+              <time class="lecture__date" datetime="2016-10-20 14:00">
+                <span class="lecture__day">20 октября</span>
+                <span class="lecture__time">
+                  14:00
+                </span>
+              </time>
+
+              <ul class="lecture__schools">
+                <li class="lecture__school">Школа разработки интерфейсов</li>
+                <li class="lecture__school">Школа мобильного дизайна</li>
+              </ul>
+              <div class="lecture__place">
+                <span class="lecture__label lecture__label_inline">
+                  Аудитория:
+                </span>
+                "Синий кит"
+              </div>
+              <h2 class="lecture__theme">Адаптивная вёрстка</h2>
+              <ul class="lecture__lectors">
+                <li class="lecture__lector">
+                  <span class="lecture__lectorname">Дмитрий Душкин</span>
+                  <span class="lecture__lectorcompany">Яндекс</span>
+                  <div class="lecture__lectorbio">
+                    Кандидат технических наук, научный сотрудник ИПУ РАН с 2008 по 2013. Пришёл в Яндекс.Картинки в 2014 году, отвечал за мобильную версию и рост производительности сервиса. В 2016 перешёл в Yandex Data Factory, где разрабатывает интерфейсы и дизайн веб-приложений для B2B.
+                  </div>
+                </li>
+              </ul>
+              <div class="lecture__links">
+                <a href="#" class="lecture__link btn">Смотреть</a>
+                <a href="#" class="lecture__link btn">Презентация</a>
+              </div>
+
+            </article>
+
+            <article class="lecture">
+              <time class="lecture__date" datetime="2016-10-25 14:00">
+                <span class="lecture__day">25 октября</span>
+                <span class="lecture__time">
+                  14:00
+                </span>
+              </time>
+
+              <ul class="lecture__schools">
+                <li class="lecture__school">Школа разработки интерфейсов</li>
+                <li class="lecture__school">Школа мобильного дизайна</li>
+              </ul>
+              <div class="lecture__place">
+                <span class="lecture__label lecture__label_inline">
+                  Аудитория:
+                </span>
+                "Синий кит"
+              </div>
+              <h2 class="lecture__theme">Особенности проектирования мобильных интерфейсов</h2>
+              <ul class="lecture__lectors">
+                <li class="lecture__lector">
+                  <span class="lecture__lectorname">Васюнин Николай</span>
+                  <span class="lecture__lectorcompany">Яндекс</span>
+                  <div class="lecture__lectorbio">
+                    Пришёл в Яндекс в 2014 году. Дизайнер продукта в музыкальных сервисах компании, участник команды разработки Яндекс.Радио.
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="lecture">
+              <time class="lecture__date" datetime="2016-10-27 14:00">
+                <span class="lecture__day">27 октября</span>
+                <span class="lecture__time">
+                  14:00
+                </span>
+              </time>
+
+              <ul class="lecture__schools">
+                <li class="lecture__school">Школа разработки интерфейсов</li>
+              </ul>
+              <div class="lecture__place">
+                <span class="lecture__label lecture__label_inline">
+                  Аудитория:
+                </span>
+                "Синий кит"
+              </div>
+              <h2 class="lecture__theme">Работа с сенсорным пользовательским вводом</h2>
+              <ul class="lecture__lectors">
+                <li class="lecture__lector">
+                  <span class="lecture__lectorname">Дмитрий Душкин</span>
+                  <span class="lecture__lectorcompany">Яндекс</span>
+                  <div class="lecture__lectorbio">
+                    Кандидат технических наук, научный сотрудник ИПУ РАН с 2008 по 2013. Пришёл в Яндекс.Картинки в 2014 году, отвечал за мобильную версию и рост производительности сервиса. В 2016 перешёл в Yandex Data Factory, где разрабатывает интерфейсы и дизайн веб-приложений для B2B.
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+
+            <article class="lecture">
+              <time class="lecture__date" datetime="2016-11-3 14:00">
+                <span class="lecture__day">3 ноября</span>
+                <span class="lecture__time">
+                  14:00
+                </span>
+              </time>
+
+              <ul class="lecture__schools">
+                <li class="lecture__school">Школа разработки интерфейсов/li>
+              </ul>
+              <div class="lecture__place">
+                <span class="lecture__label lecture__label_inline">
+                  Аудитория:
+                </span>
+                "Синий кит"
+              </div>
+              <h2 class="lecture__theme">Мультимедиа: возможности браузера</h2>
+              <ul class="lecture__lectors">
+                <li class="lecture__lector">
+                  <span class="lecture__lectorname">Максим Васильев</span>
+                  <span class="lecture__lectorcompany">Яндекс</span>
+                  <div class="lecture__lectorbio">
+                    Во фронтенд-разработке с 2007 года. До 2013-го, когда пришёл в Яндекс, работал технологом в студии Лебедева и других компаниях.
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+
+
+            <article class="lecture">
+              <time class="lecture__date" datetime="2016-11-10 14:00">
+                <span class="lecture__day">10 ноября</span>
+                <span class="lecture__time">
+                  14:00
+                </span>
+              </time>
+
+              <ul class="lecture__schools">
+                <li class="lecture__school">Школа разработки интерфейсов</li>
+                <li class="lecture__school">Школа мобильного дизайна</li>
+              </ul>
+              <div class="lecture__place">
+                <span class="lecture__label lecture__label_inline">
+                  Аудитория:
+                </span>
+                "Синий кит"
+              </div>
+              <h2 class="lecture__theme">Продукт и платформа</h2>
+              <ul class="lecture__lectors">
+                <li class="lecture__lector">
+                  <span class="lecture__lectorname">Сергей Калабин</span>
+                  <span class="lecture__lectorcompany">Яндекс</span>
+                  <div class="lecture__lectorbio">
+                    Пришёл в компанию дизайнером мобильных приложений в 2013-м. Три года занимался музыкальными сервисами Яндекса, сейчас руководит дизайном турецкого направления. Считает что дизайнера должна отличать любовь к людям.
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="lecture">
+              <time class="lecture__date" datetime="2016-11-15 14:00">
+                <span class="lecture__day">15 ноября</span>
+                <span class="lecture__time">
+                  14:00
+                </span>
+              </time>
+
+              <ul class="lecture__schools">
+                <li class="lecture__school">Школа мобильного дизайна</li>
+              </ul>
+              <div class="lecture__place">
+                <span class="lecture__label lecture__label_inline">
+                  Аудитория:
+                </span>
+                "Синий кит"
+              </div>
+              <h2 class="lecture__theme">Анимации</h2>
+              <ul class="lecture__lectors">
+                <li class="lecture__lector">
+                  <span class="lecture__lectorname">Сергей Томилов</span>
+                  <span class="lecture__lectorcompany">Яндекс</span>
+                  <div class="lecture__lectorbio">
+                    Серёжа: Профессионально занимается дизайном с 2009 года. В 2010 году переключился на работу исключительно над интерфейсами, по большей части мобильными. В Яндекс пришёл в 2011 году. Участвовал в создании разных продуктов Поиска, Диска, Фоток и Музыки для всех популярных платформ.
+                  </div>
+                </li>
+                <li class="lecture__lector">
+                  <span class="lecture__lectorname">Дарья Старицына</span>
+                  <span class="lecture__lectorcompany">Яндекс</span>
+                  <div class="lecture__lectorbio">
+                    Дизайнер мобильных продуктов. До прихода в компанию занималась интерфейсами мобильных игр. В Яндексе делает Браузер под все платформы. Также успела поработать над экспериментальными голосовыми интерфейсами и мобильной версией главной страницы Яндекса.
+                  </div>
+                </li>
+              </ul>
+            </article>
         </section>
         <!-- end timetable -->
 
